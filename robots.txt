@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://literaturaeartedigital.com.br/sitemap.xml

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CONTRASTES — Alan Ribeiro | Literatura e Arte Digital</title>
+<meta name="description" content="CONTRASTES, romance de Alan Ribeiro sobre memória, escolhas e recomeços. Sete obras, sete capítulos, uma história.">
+<meta property="og:title" content="CONTRASTES — Alan Ribeiro">
+<meta property="og:description" content="Um romance sobre memória, escolhas e recomeços.">
+<meta property="og:image" content="https://literaturaeartedigital.com.br/livros/contrastes/images/capa.jpeg">
+<meta property="og:url" content="https://literaturaeartedigital.com.br/livros/contrastes/">
+<link rel="canonical" href="https://literaturaeartedigital.com.br/livros/contrastes/">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#eef2f6;--fg:#0e1a24;--mut:#5a6b7a;--card:#fff;--line:#cdd8e2;--ac:#1c4a73;--ac2:#0e1a24;--err:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0a141c;--fg:#e8eef4;--mut:#93a5b5;--card:#10202c;--line:#223646;--ac:#347ab5;--ac2:#e8eef4;--err:#ff7b72}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0a141c;--fg:#e8eef4;--mut:#93a5b5;--card:#10202c;--line:#223646;--ac:#347ab5;--ac2:#e8eef4;--err:#ff7b72}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em}
+a{color:var(--ac)}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+header .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:700;letter-spacing:.2em}
+nav a{margin-right:16px;text-decoration:none;color:var(--mut);font:14px system-ui,sans-serif}
+.btn{display:inline-block;background:var(--ac);color:#fff;border:0;padding:13px 26px;border-radius:4px;font:600 16px system-ui,sans-serif;cursor:pointer;text-decoration:none}
+.btn.o{background:none;color:var(--fg);border:1px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+input:disabled,select:disabled{opacity:.5;cursor:not-allowed}
+input:-webkit-autofill,select:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px var(--bg) inset;-webkit-text-fill-color:var(--fg);caret-color:var(--fg)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:56px 0}
+.capa{display:block;max-width:320px;width:100%;height:auto;margin:auto;border-radius:3px;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.tag{font:13px system-ui,sans-serif;color:var(--ac);letter-spacing:.15em;text-transform:uppercase}
+.preco{font-size:34px;font-weight:700;margin:14px 0}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px}
+.card b{display:block;font:13px system-ui,sans-serif;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.obra{background:var(--card);border:1px solid var(--line);border-radius:4px;margin:0;cursor:pointer;overflow:hidden}
+.obra img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover}
+.obra figcaption{padding:8px 10px;font:13px system-ui,sans-serif;color:var(--mut)}
+.livro{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;align-items:start}
+.livro figure{margin:0;text-align:center;cursor:pointer}
+.livro img{width:100%;height:auto;display:block;border-radius:3px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.livro .or{max-width:170px;margin:0 auto}
+.livro figcaption{margin-top:10px;font:13px system-ui,sans-serif;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.modal .mi{max-width:min(92vw,720px);max-height:94vh;overflow:auto;padding:14px;background:var(--card)}
+.modal .mi img{max-width:100%;max-height:78vh;height:auto;display:block;margin:0 auto}
+.checkout{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start}
+label{display:block;font:600 13px system-ui,sans-serif;margin:12px 0 4px}
+input,select{width:100%;padding:11px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.op{display:flex;gap:10px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:4px;margin-top:8px;cursor:pointer;font:15px system-ui,sans-serif}
+.op input{width:auto}
+.op.sel{border-color:var(--ac)}
+.res div{display:flex;justify-content:space-between;padding:6px 0;font:15px system-ui,sans-serif}
+.res .t{border-top:1px solid var(--line);margin-top:6px;padding-top:12px;font-size:20px;font-weight:700}
+.err{color:var(--err);font:14px system-ui,sans-serif;margin-top:6px}
+.pix{text-align:center}
+.pix textarea{width:100%;height:90px;font:12px monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line);padding:8px}
+#qr{display:inline-block;background:#fff;padding:10px;margin:10px 0}
+.hide{display:none}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:700}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font:14px system-ui,sans-serif}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:4px}
+.qty button{background:none;border:0;color:var(--fg);font-size:20px;width:40px;height:40px;cursor:pointer}
+.qty span{min-width:30px;text-align:center;font:16px system-ui,sans-serif}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:20;padding:20px}
+.modal div{background:var(--card);padding:30px;border-radius:6px;max-width:360px;width:100%;text-align:center}
+@media(max-width:760px){.hero,.checkout{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<header><div class="w"><div class="logo">CONTRASTES</div><nav><a href="../">← Livros</a><a href="#livro">O livro</a><a href="#sinopse">Sinopse</a><a href="#obras">Obras</a><a href="#autor">Autor</a><a href="#faq">Dúvidas</a></nav><a class="btn" href="#comprar" style="padding:9px 18px;font-size:14px">Comprar agora</a></div></header>
+
+<main class="w">
+<div class="hero">
+ <img class="capa" src="images/capa.jpeg" alt="Capa do livro CONTRASTES, de Alan Ribeiro">
+ <div>
+  <div class="tag">Sete obras. Sete capítulos. Uma história.</div>
+  <h1 style="font-size:44px">CONTRASTES</h1>
+  <p style="font-size:20px;font-style:italic;margin:0 0 12px">Um romance sobre memória, escolhas e recomeços.</p><p style="color:var(--mut)">Uma fotografia antiga. Uma carta inesperada. Um passado que insiste em retornar.</p><p style="color:var(--mut)">Conheça Daniel Albuquerque, um arquiteto que vê suas certezas abaladas quando acontecimentos esquecidos começam a revelar novas verdades. Literatura e arte contemporânea digital em sete capítulos inspirados em sete obras originais de Alan Ribeiro.</p><p style="font-style:italic">Entre o caos e a ordem, existe arte.</p>
+  <div class="preco" id="precoHero"></div>
+  <a class="btn" href="#comprar">Comprar agora</a>
+  <p style="font:14px system-ui,sans-serif;color:var(--mut)">Pagamento via Pix · Frete calculado pelo CEP · Postagem em até <span id="prep"></span> dias úteis</p>
+ </div>
+</div>
+
+<section id="livro"><h2>O livro por fora e por dentro</h2>
+<p>Clique em uma imagem para ampliar.</p>
+<div class="livro">
+<figure onclick="openImg('images/capa.jpeg','Capa')"><img src="images/capa.jpeg" alt="Capa do livro" loading="lazy"><figcaption>Capa</figcaption></figure>
+<figure onclick="openImg('images/quartacapa.jpeg','Quarta capa')"><img src="images/quartacapa.jpeg" alt="Quarta capa do livro" loading="lazy"><figcaption>Quarta capa</figcaption></figure>
+<figure onclick="openImg('images/sobreoautor.jpeg','Orelha: sobre o autor')"><div class="or"><img src="images/sobreoautor.jpeg" alt="Orelha com informações sobre o autor" loading="lazy"></div><figcaption>Sobre o autor</figcaption></figure>
+<figure onclick="openImg('images/sobreolivro.jpeg','Orelha: sobre o livro')"><div class="or"><img src="images/sobreolivro.jpeg" alt="Orelha com informações sobre o livro" loading="lazy"></div><figcaption>Sobre o livro</figcaption></figure>
+</div></section>
+
+<section id="sinopse"><h2>Sinopse</h2><p style="font-size:20px;font-style:italic">Um romance sobre memória, escolhas e recomeços.</p><div id="sinopseTxt"></div></section>
+
+<section id="obras"><h2>As sete obras</h2><p>Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p><div class="grid" id="gal"></div></section>
+
+<section id="autor"><h2>Sobre o autor</h2><h3 style="font-style:italic">Alan Ribeiro</h3><div id="bioTxt"></div><p><a class="btn o" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Arte no Instagram · @literaturaeartedigital</a> <a class="btn o" href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener">@professoralanribeiro</a></p></section>
+
+<section><h2>Detalhes do livro</h2><div class="grid" id="det"></div></section>
+
+<section id="comprar"><h2>Compre seu exemplar</h2>
+<div class="checkout">
+ <div class="card" id="passo1">
+  <label>Quantidade</label>
+  <div class="qty"><button onclick="qtd(-1)" aria-label="Diminuir">−</button><span id="q">1</span><button onclick="qtd(1)" aria-label="Aumentar">+</button></div>
+  <label for="cep">CEP de destino</label>
+  <div class="row" style="grid-template-columns:1fr auto"><input id="cep" inputmode="numeric" maxlength="9" placeholder="00000-000"><button class="btn o" onclick="calcFrete()">Calcular frete</button></div>
+  <div id="fretes"></div><div class="err" id="eCep"></div><div id="cepInfo" style="font:13px system-ui,sans-serif;color:var(--mut);margin-top:6px"></div>
+  <div id="dados" class="hide">
+   <label for="nome">Nome completo</label><input id="nome" autocomplete="name">
+   <div class="row"><div><label for="email">E-mail</label><input id="email" type="email" autocomplete="email"></div><div><label for="tel">Telefone (WhatsApp)</label><input id="tel" inputmode="tel" autocomplete="tel"></div></div>
+   <div class="row"><div><label for="rua">Rua</label><input id="rua"></div><div><label for="num">Número</label><input id="num"></div></div>
+   <div class="row"><div><label for="comp">Complemento <span style="font-weight:400;color:var(--mut)">(opcional)</span></label><input id="comp"></div><div><label for="bairro">Bairro</label><input id="bairro"></div></div>
+   <div class="row"><div><label for="uf">Estado</label><select id="uf"><option value="">Selecione</option></select></div><div><label for="cidade">Cidade</label><input id="cidade" autocomplete="address-level2" placeholder="Escolha o estado primeiro" disabled></div></div>
+   <div id="eForm" style="font:13px system-ui,sans-serif;color:var(--mut);margin:10px 0"></div>
+   <p style="font:13px system-ui,sans-serif;color:var(--mut)">Usamos seus dados apenas para entrega e contato sobre o pedido, conforme a <a href="#" onclick="pol('privacidade');return false">Política de Privacidade</a>.</p>
+   <button class="btn" id="btnPix" style="width:100%" onclick="gerar()" disabled>Gerar Pix</button>
+  </div>
+ </div>
+ <div>
+  <div class="card res" id="resumo"></div>
+  <div class="card pix hide" id="pixBox" style="margin-top:16px">
+   <h3>Pague com Pix</h3>
+   <p style="font:14px system-ui,sans-serif">Pedido <b id="nPed"></b> · aguardando pagamento · válido por 30 min</p>
+   <div id="qr"></div>
+   <textarea id="copia" readonly></textarea>
+   <button class="btn o" style="margin:8px 0" onclick="copiar()">Copiar código Pix</button>
+   <a class="btn" id="wpp" target="_blank" rel="noopener" style="display:block">Enviar comprovante no WhatsApp</a>
+   <p id="semWpp" class="hide" style="font:14px system-ui,sans-serif"><b>Atendimento por WhatsApp temporariamente indisponível.</b> Guarde o número do seu pedido: o canal de atendimento será divulgado em breve.</p>
+   <p style="font:13px system-ui,sans-serif;color:var(--mut)">Seu pedido é confirmado após o vendedor conferir o recebimento. O rastreio será enviado pelo canal de atendimento ou por e-mail.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="faq"><h2>Dúvidas frequentes</h2>
+<details><summary>Quando meu pedido é enviado?</summary><p>Após a confirmação do pagamento, o livro é embalado e postado em até <span class="prepx"></span> dias úteis.</p></details>
+<details><summary>Como acompanho a entrega?</summary><p>Assim que o livro for postado, enviamos o código de rastreamento nos Correios.</p></details>
+<details><summary>Posso trocar ou devolver?</summary><p>Sim. Em compras online você tem 7 dias após o recebimento para desistir, conforme o art. 49 do Código de Defesa do Consumidor. Fale com a gente pelos canais de atendimento do site.</p></details>
+<details><summary>Quais formas de pagamento?</summary><p>Pix. Outras formas poderão ser adicionadas depois.</p></details>
+<details><summary>Entregam em todo o Brasil?</summary><p>Sim, para onde os Correios entregam.</p></details>
+</section>
+</main>
+
+<footer><div class="w">
+<p><b id="vend"></b> · Contato: <span id="ctt"></span> · <a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">@literaturaeartedigital</a> · <a href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener">@professoralanribeiro</a></p>
+<p><a href="../../">← Voltar ao site Literatura e Arte Digital</a></p>
+<p><a href="#" onclick="pol('privacidade');return false">Privacidade</a> · <a href="#" onclick="pol('termos');return false">Termos</a> · <a href="#" onclick="pol('devolucao');return false">Devolução</a></p>
+<p>© 2026 CONTRASTES. Todos os direitos reservados.</p></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// ===== CONFIGURAÇÃO: o vendedor edita só este bloco =====
+var CFG={
+ preco:5990,            // em centavos (R$ 59,90)
+ estoque:40,
+ prepDias:3,
+ cepOrigem:"57036480",
+ pesoG:350,
+ vendedor:"Alan Ribeiro",
+ whatsapp:"",   // DDI+DDD+número (vazio = WhatsApp indisponível por enquanto)
+ pixChave:"4ef12078-d59b-4d53-b6a4-6b38ba67e97d",  // chave Pix do vendedor
+ pixNome:"ALAN RIBEIRO",
+ pixCidade:"MACEIO",
+ sinopse:"Algumas histórias não terminam quando o passado fica para trás.\nDaniel Albuquerque construiu uma vida cercada de projetos, decisões e certezas. Arquiteto respeitado, acostumou-se a organizar o mundo por meio de linhas precisas e estruturas bem definidas. Mas uma carta inesperada, acompanhada de uma fotografia antiga, coloca em dúvida acontecimentos que ele acreditava conhecer.\nAo revisitar uma noite de 2006, Daniel encontra lembranças incompletas, amizades marcadas pelo silêncio e documentos que podem revelar muito mais do que imaginava.\nEntre o passado que insiste em retornar e o presente que exige suas próprias escolhas, ele precisará enfrentar uma pergunta: até que ponto conhecemos a verdade sobre a vida que construímos?\nCONTRASTES é um romance contemporâneo sobre memória, relações humanas, escolhas e recomeços. Uma história em que descobrir a verdade pode ser apenas o primeiro passo para compreender a si mesmo.",
+ bio:"Contador, administrador, mestre em Administração, especialista em Contabilidade Pública e professor universitário.\nÉ um entusiasta da educação, da gestão pública e da inovação social, áreas em que atua há mais de duas décadas.\nSua aproximação com a criação artística deu origem a coleções de arte contemporânea digital, nas quais explora formas, cores, movimentos e contrastes como expressões de experiências e reflexões humanas.\nCom CONTRASTES, seu primeiro romance, amplia essa experiência criativa para a literatura, transformando sete obras visuais em uma narrativa sobre memória, escolhas, relações humanas e recomeços.",
+ detalhes:[["Subtítulo","Um romance sobre memória, escolhas e recomeços"],["Gênero","Romance contemporâneo · Literatura brasileira"],["Idioma","Português (Brasil)"],["ISBN","978-65-02-49991-7"],["Formato","Brochura, 14 × 21 cm"],["Páginas","Aprox. 174 (a confirmar na versão final)"],["Encadernação","Brochura com cola PUR"],["Capa","Papel Triplex 250 g, com orelhas de 7 cm"],["Miolo","Preto e branco, com 7 páginas coloridas das obras"],["Edição","1ª edição · 2026"],["Envio","Correios, todo o Brasil"]],
+ obras:[["01_Equilibrio_Urbano.jpg","Equilíbrio Urbano"],["02_Fluxos.jpg","Fluxos"],["03_Equilibrio_em_Movimento.jpg","Equilíbrio em Movimento"],["04_Ponto_de_Equilibrio.jpg","Ponto de Equilíbrio"],["05_Renascer.jpg","Renascer"],["06_Horizontes.jpg","Horizontes"],["07_Essencia.jpg","Essência"]]
+};
+var $=function(i){return document.getElementById(i)};
+var S={q:1,frete:null,cotacao:0};
+var BRL=function(c){return (c/100).toLocaleString("pt-BR",{style:"currency",currency:"BRL"})};
+
+function init(){
+ $("precoHero").textContent=BRL(CFG.preco);
+ $("prep").textContent=CFG.prepDias;
+ document.querySelectorAll(".prepx").forEach(function(e){e.textContent=CFG.prepDias});
+ var par=function(t){return t.split("\n").map(function(p){return "<p>"+p+"</p>"}).join("")};$("sinopseTxt").innerHTML=par(CFG.sinopse);$("bioTxt").innerHTML=par(CFG.bio);
+ $("vend").textContent=CFG.vendedor;
+ $("ctt").innerHTML=CFG.whatsapp?'<a href="https://wa.me/'+CFG.whatsapp+'" target="_blank" rel="noopener">WhatsApp</a>':"WhatsApp em breve";
+ $("det").innerHTML=CFG.detalhes.map(function(d){return '<div class="card"><b>'+d[0]+'</b>'+d[1]+'</div>'}).join("");
+ $("gal").innerHTML=CFG.obras.map(function(o,i){return '<figure class="obra" onclick="zoom('+i+')"><img src="images/'+o[0]+'" alt="Obra '+(i+1)+': '+o[1]+'" loading="lazy"><figcaption>'+(i+1)+'. '+o[1]+'</figcaption></figure>'}).join("");
+ $("cep").addEventListener("input",function(){var v=this.value.replace(/\D/g,"").slice(0,8);this.value=v.length>5?v.slice(0,5)+"-"+v.slice(5):v;
+  if(S.cotacao){S.cotacao=0;S.frete=null;S.ops=null;$("fretes").innerHTML="";$("dados").classList.add("hide");resumo()}
+  S.buscando=null;$("cepInfo").textContent="";
+  if(v.length===8&&!/^(\d)\1{7}$/.test(v))buscarCep(v)});
+ var UFS="AC,AL,AP,AM,BA,CE,DF,ES,GO,MA,MT,MS,MG,PA,PB,PR,PE,PI,RJ,RN,RS,RO,RR,SC,SP,SE,TO".split(",");
+ $("uf").innerHTML+=UFS.map(function(u){return '<option value="'+u+'">'+u+'</option>'}).join("");
+ var h=function(ev){var t=ev&&ev.target;if(t&&/^(uf|cidade|bairro|rua)$/.test(t.id))t.dataset.ed="1";syncUF()};
+ $("dados").addEventListener("input",h);$("dados").addEventListener("change",h);
+ resumo();
+}
+function syncUF(){var ok=!!$("uf").value;$("cidade").disabled=!ok;$("cidade").placeholder=ok?"":"Escolha o estado primeiro";if(!ok)$("cidade").value="";check()}
+// Busca de endereço pelo CEP (ViaCEP, com BrasilAPI de reserva)
+function buscarCep(c){
+ S.buscando=c;$("cepInfo").textContent="Buscando endereço…";
+ ["uf","cidade","bairro","rua"].forEach(function(i){delete $(i).dataset.ed});
+ var viacep=function(){return fetch("https://viacep.com.br/ws/"+c+"/json/").then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){return d.erro?"nf":{uf:d.uf,cidade:d.localidade,bairro:d.bairro,rua:d.logradouro}})};
+ var brasil=function(){return fetch("https://brasilapi.com.br/api/cep/v1/"+c).then(function(r){if(r.status===404)return "nf";if(!r.ok)throw 0;return r.json()}).then(function(d){return d==="nf"?d:{uf:d.state,cidade:d.city,bairro:d.neighborhood,rua:d.street}})};
+ viacep().catch(brasil).catch(function(){return null}).then(function(e){
+  if(S.buscando!==c)return;
+  if(e==="nf"){$("cepInfo").textContent="Não encontramos esse CEP na base de endereços. Preencha o endereço manualmente.";return}
+  if(!e){$("cepInfo").textContent="Não foi possível buscar o endereço agora. Preencha manualmente.";return}
+  var ufs=$("uf");if(e.uf&&!ufs.dataset.ed)ufs.value=e.uf;
+  syncUF();
+  [["cidade",e.cidade],["bairro",e.bairro],["rua",e.rua]].forEach(function(p){var el=$(p[0]);if(p[1]&&!el.dataset.ed)el.value=p[1]});
+  var falta=!e.rua||!e.bairro;
+  $("cepInfo").textContent="Endereço preenchido pelo CEP. Confira e corrija se estiver errado."+(falta?" Complete rua e bairro.":"");
+  check();
+ });
+}
+function qtd(d){var n=S.q+d;if(n<1)n=1;if(n>CFG.estoque){n=CFG.estoque;}if(n>10)n=10;S.q=n;$("q").textContent=n;
+ if(S.cotacao){calcFrete()}else resumo()}
+
+// Frete: estimativa por região (substituir por API dos Correios no backend)
+function calcFrete(){
+ var c=$("cep").value.replace(/\D/g,"");$("eCep").textContent="";
+ if(c.length!==8||/^(\d)\1{7}$/.test(c)){$("eCep").textContent="Informe um CEP válido com 8 dígitos.";return}
+ var d=Math.abs(+c[0]-(+CFG.cepOrigem[0]));
+ var peso=CFG.pesoG*S.q+150;
+ var extra=Math.ceil(peso/500)-1;
+ var pac=1690+d*230+extra*450, sed=2790+d*380+extra*700;
+ S.cotacao=1;
+ S.ops=[{id:"pac",nome:"PAC (econômico)",preco:pac,prazo:6+d},{id:"sedex",nome:"SEDEX (expresso)",preco:sed,prazo:2+Math.ceil(d/2)}];
+ S.frete=S.ops[0];
+ $("fretes").innerHTML=S.ops.map(function(o,i){return '<label class="op '+(i?'':'sel')+'"><input type="radio" name="fr" '+(i?'':'checked')+' onchange="escolher(\''+o.id+'\')"> <span style="flex:1">'+o.nome+'<br><small style="color:var(--mut)">'+o.prazo+' dias úteis de transporte + '+CFG.prepDias+' de preparação</small></span><b>'+BRL(o.preco)+'</b></label>'}).join("")+'<small style="color:var(--mut);font-family:system-ui">Valores estimados por região; o vendedor confirma o valor exato antes da postagem.</small>';
+ $("dados").classList.remove("hide");resumo();check();
+}
+function escolher(id){S.frete=S.ops.filter(function(o){return o.id===id})[0];
+ document.querySelectorAll(".op").forEach(function(e){e.classList.toggle("sel",e.querySelector("input").checked)});resumo()}
+function total(){return CFG.preco*S.q+(S.frete?S.frete.preco:0)}
+function resumo(){
+ $("resumo").innerHTML='<h3>Resumo</h3><div><span>'+S.q+' × CONTRASTES</span><span>'+BRL(CFG.preco*S.q)+'</span></div><div><span>Frete'+(S.frete?' ('+S.frete.nome.split(" ")[0]+')':'')+'</span><span>'+(S.frete?BRL(S.frete.preco):'informe o CEP')+'</span></div><div class="t"><span>Total</span><span>'+BRL(total())+'</span></div>';
+}
+
+// ===== Pix copia e cola (BR Code estático) =====
+function tlv(i,v){return i+String(v.length).padStart(2,"0")+v}
+function crc(s){var c=0xFFFF;for(var i=0;i<s.length;i++){c^=s.charCodeAt(i)<<8;for(var j=0;j<8;j++)c=(c&0x8000)?((c<<1)^0x1021):(c<<1);c&=0xFFFF}return c.toString(16).toUpperCase().padStart(4,"0")}
+function pixPayload(valor,txid){
+ var p=tlv("00","01")+tlv("01","11")+tlv("26",tlv("00","br.gov.bcb.pix")+tlv("01",CFG.pixChave))+tlv("52","0000")+tlv("53","986")+tlv("54",(valor/100).toFixed(2))+tlv("58","BR")+tlv("59",CFG.pixNome.slice(0,25))+tlv("60",CFG.pixCidade.slice(0,15))+tlv("62",tlv("05",txid))+"6304";
+ return p+crc(p)}
+
+function faltando(){var m=[];
+ if(!S.frete)m.push("opção de frete");
+ if($("nome").value.trim().split(/\s+/).filter(Boolean).length<2)m.push("nome completo");
+ if(!/^\S+@\S+\.\S+$/.test($("email").value.trim()))m.push("e-mail válido");
+ var t=$("tel").value.replace(/\D/g,"");if(t.length<10||t.length>11)m.push("telefone com DDD");
+ if(!$("rua").value.trim())m.push("rua");
+ if(!$("num").value.trim())m.push("número");
+ if(!$("bairro").value.trim())m.push("bairro");
+ if(!$("uf").value)m.push("estado");
+ if($("cidade").value.trim().length<2)m.push("cidade");
+ return m}
+function check(){var m=faltando();$("btnPix").disabled=m.length>0;$("eForm").textContent=m.length?"Falta preencher: "+m.join(", ")+".":"Tudo certo! Você já pode gerar o Pix."}
+function gerar(){
+ var f={nome:$("nome").value.trim(),email:$("email").value.trim(),tel:$("tel").value.replace(/\D/g,""),rua:$("rua").value.trim(),num:$("num").value.trim(),bairro:$("bairro").value.trim(),cidade:$("cidade").value.trim(),uf:$("uf").value,comp:$("comp").value.trim()};
+ if(faltando().length){check();return}
+ var n="CTR"+Date.now().toString(36).toUpperCase().slice(-7);
+ var t=total();
+ var ped={numero:n,qtd:S.q,frete:S.frete.nome,total:t,cliente:f,cep:$("cep").value,status:"AGUARDANDO_PAGAMENTO",criado:new Date().toISOString()};
+ try{var l=JSON.parse(localStorage.getItem("pedidos")||"[]");l.push(ped);localStorage.setItem("pedidos",JSON.stringify(l))}catch(x){}
+ var code=pixPayload(t,n);
+ $("nPed").textContent=n;$("copia").value=code;
+ $("qr").innerHTML="";
+ if(window.QRCode){new QRCode($("qr"),{text:code,width:200,height:200,correctLevel:QRCode.CorrectLevel.M})}
+ var msg="Olá! Fiz o pedido "+n+" de CONTRASTES: "+S.q+" un., frete "+S.frete.nome+", total "+BRL(t)+". Segue o comprovante do Pix. Nome: "+f.nome+".";
+ if(CFG.whatsapp){$("wpp").href="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent(msg);$("wpp").style.display="block";$("semWpp").classList.add("hide")}else{$("wpp").style.display="none";$("semWpp").classList.remove("hide")}
+ $("pixBox").classList.remove("hide");$("pixBox").scrollIntoView({behavior:"smooth"});
+}
+function copiar(){var t=$("copia");t.select();try{navigator.clipboard.writeText(t.value)}catch(x){document.execCommand("copy")}}
+
+var POL={
+ privacidade:"Coletamos nome, contato e endereço apenas para processar e entregar seu pedido (LGPD, Lei 13.709/2018). Não vendemos seus dados. Para solicitar acesso ou exclusão, fale conosco pelos canais de atendimento do site.",
+ termos:"O preço total, o frete e o prazo são exibidos antes da confirmação. O pedido é confirmado após a verificação do pagamento Pix pelo vendedor. Vendedor: "+CFG.vendedor+".",
+ devolucao:"Você pode desistir da compra em até 7 dias após o recebimento (CDC, art. 49). Entre em contato pelos canais de atendimento do site para combinarmos a devolução e o reembolso."
+};
+function pol(k){var m=document.createElement("div");m.className="modal";m.onclick=function(){m.remove()};m.innerHTML='<div><h3>'+k.charAt(0).toUpperCase()+k.slice(1)+'</h3><p>'+POL[k]+'</p><button class="btn">Fechar</button></div>';document.body.appendChild(m)}
+function openImg(src,t){var m=document.createElement("div");m.className="modal";m.onclick=function(){m.remove()};m.innerHTML='<div class="mi"><img src="'+src+'" alt="'+t+'"><p>'+t+'</p></div>';document.body.appendChild(m)}
+function zoom(i){openImg('images/'+CFG.obras[i][0],(i+1)+'. '+CFG.obras[i][1])}
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".modal");if(m)m.remove()}});
+init();
+</script>
+</body>
+</html>
