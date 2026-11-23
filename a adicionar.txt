@@ -1,2 +1,8 @@
 LITERATURA E ARTE DIGITAL:
-gerar relatório de vendas, com o contato de quem comprou e-mail e whtasapp
+
+1. gerar relatório de vendas, com o contato de quem comprou e-mail e whtasapp
+
+2. adicionar no menu principal:
+* PROFESSOR ALAN RIBEIRO (www.professoralanribeiro.com.br) 
+* NÚCLEO EDUCAÇÃO (www.nucleoeducacao.net.br)
+* ABCSA (https://abcsa.org.br/) só colocar um direcionador para o site da ABCSA
