@@ -61,8 +61,12 @@ input,select{width:100%;padding:11px;border:1px solid var(--line);border-radius:
 .pix textarea{width:100%;height:90px;font:12px monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line);padding:8px}
 #qr{display:inline-block;background:#fff;padding:10px;margin:10px 0}
 .hide{display:none}
+.igl{display:inline-flex;align-items:center;gap:6px;font-weight:700;text-decoration:none}
+.tagl{font-style:italic;color:var(--mut);font-size:19px;margin:0 0 .8em}
 details{border-bottom:1px solid var(--line);padding:12px 0}
 summary{cursor:pointer;font-weight:700}
+details[open] summary{color:var(--ac);margin-bottom:6px}
+details p{margin:.7em 0}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font:14px system-ui,sans-serif}
 .qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:4px}
 .qty button{background:none;border:0;color:var(--fg);font-size:20px;width:40px;height:40px;cursor:pointer}
@@ -92,16 +96,16 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font:14p
 <p>Clique em uma imagem para ampliar.</p>
 <div class="livro">
 <figure onclick="openImg('images/capa.jpeg','Capa')"><img src="images/capa.jpeg" alt="Capa do livro" loading="lazy"><figcaption>Capa</figcaption></figure>
-<figure onclick="openImg('images/quartacapa.jpeg','Quarta capa')"><img src="images/quartacapa.jpeg" alt="Quarta capa do livro" loading="lazy"><figcaption>Quarta capa</figcaption></figure>
+<figure onclick="openImg('images/quartacapa.jpeg','Contracapa')"><img src="images/quartacapa.jpeg" alt="Contracapa do livro" loading="lazy"><figcaption>Contracapa</figcaption></figure>
 <figure onclick="openImg('images/sobreoautor.jpeg','Orelha: sobre o autor')"><div class="or"><img src="images/sobreoautor.jpeg" alt="Orelha com informações sobre o autor" loading="lazy"></div><figcaption>Sobre o autor</figcaption></figure>
 <figure onclick="openImg('images/sobreolivro.jpeg','Orelha: sobre o livro')"><div class="or"><img src="images/sobreolivro.jpeg" alt="Orelha com informações sobre o livro" loading="lazy"></div><figcaption>Sobre o livro</figcaption></figure>
 </div></section>
 
 <section id="sinopse"><h2>Sinopse</h2><p style="font-size:20px;font-style:italic">Um romance sobre memória, escolhas e recomeços.</p><div id="sinopseTxt"></div></section>
 
-<section id="obras"><h2>As sete obras</h2><p>Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p><div class="grid" id="gal"></div></section>
+<section id="obras"><h2>As sete obras</h2><p>Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p><p>Conheça mais em: <a class="igl" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</a></p><div class="grid" id="gal"></div></section>
 
-<section id="autor"><h2>Sobre o autor</h2><h3 style="font-style:italic">Alan Ribeiro</h3><div id="bioTxt"></div><p><a class="btn o" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Arte no Instagram · @literaturaeartedigital</a> <a class="btn o" href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener">@professoralanribeiro</a></p></section>
+<section id="autor"><h2>Sobre o autor</h2><h3 style="font-style:italic">Alan Ribeiro</h3><p class="tagl">Da gestão e da educação à arte contemporânea e à literatura.</p><div id="bioTxt"></div><p><a class="btn o" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Arte no Instagram · @literaturaeartedigital</a></p></section>
 
 <section><h2>Detalhes do livro</h2><div class="grid" id="det"></div></section>
 
@@ -140,19 +144,39 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font:14p
 </div></section>
 
 <section id="faq"><h2>Dúvidas frequentes</h2>
-<details><summary>Quando meu pedido é enviado?</summary><p>Após a confirmação do pagamento, o livro é embalado e postado em até <span class="prepx"></span> dias úteis.</p></details>
-<details><summary>Como acompanho a entrega?</summary><p>Assim que o livro for postado, enviamos o código de rastreamento nos Correios.</p></details>
-<details><summary>Posso trocar ou devolver?</summary><p>Sim. Em compras online você tem 7 dias após o recebimento para desistir, conforme o art. 49 do Código de Defesa do Consumidor. Fale com a gente pelos canais de atendimento do site.</p></details>
-<details><summary>Quais formas de pagamento?</summary><p>Pix. Outras formas poderão ser adicionadas depois.</p></details>
-<details><summary>Entregam em todo o Brasil?</summary><p>Sim, para onde os Correios entregam.</p></details>
+<details><summary>1. Quando meu pedido é enviado?</summary>
+<p>Após a confirmação do pagamento, seu exemplar de <em>CONTRASTES</em> será cuidadosamente preparado, embalado e postado nos Correios em até <strong><span class="prepx"></span> dias úteis</strong>.</p>
+<p>Cada pedido recebe atenção especial para que o livro chegue bem protegido e em perfeitas condições. Assim que a postagem for realizada, você receberá as informações necessárias para acompanhar a entrega.</p>
+<p>Nosso compromisso é oferecer uma experiência de compra segura, transparente e organizada, desde a confirmação do pedido até a chegada do livro à sua casa.</p></details>
+<details><summary>2. Como acompanho a entrega?</summary>
+<p>Você poderá acompanhar todas as etapas da entrega do seu livro.</p>
+<p>Assim que o pedido for postado, enviaremos pelo WhatsApp o <strong>código de rastreamento dos Correios</strong>, permitindo consultar a movimentação da encomenda até o endereço informado na compra.</p>
+<p>O acompanhamento poderá ser feito diretamente no site oficial dos Correios, com informações atualizadas sobre o transporte e a previsão de entrega.</p>
+<p>Caso tenha alguma dúvida durante o processo, nosso atendimento pelo WhatsApp estará disponível para ajudar.</p></details>
+<details><summary>3. Posso trocar ou devolver o livro?</summary>
+<p>Sim! Queremos que você compre seu exemplar de <em>CONTRASTES</em> com tranquilidade e segurança.</p>
+<p>Conforme o artigo 49 do Código de Defesa do Consumidor, nas compras realizadas pela internet você tem o direito de desistir da compra em até <strong>7 dias corridos após o recebimento do produto</strong>, sem necessidade de apresentar justificativa.</p>
+<p>Para solicitar a devolução, basta entrar em contato pelo WhatsApp dentro desse prazo. Você receberá as orientações para realizar o procedimento, sem custos de devolução no exercício do direito de arrependimento.</p>
+<p>Se o livro chegar danificado ou apresentar algum defeito, entre em contato conosco para que possamos avaliar a situação e providenciar a solução adequada, respeitando seus direitos como consumidor.</p></details>
+<details><summary>4. Quais são as formas de pagamento?</summary>
+<p>Para oferecer uma compra prática e segura, inicialmente aceitamos pagamentos por <strong>Pix</strong>.</p>
+<p>Após finalizar seu pedido, você receberá as informações para realizar o pagamento. A confirmação será feita antes da preparação e postagem do livro.</p>
+<p>O valor total da compra, incluindo o frete calculado para seu CEP, será informado antes da conclusão do pedido, para que você saiba exatamente quanto irá pagar.</p>
+<p>Novas formas de pagamento poderão ser disponibilizadas futuramente.</p></details>
+<details><summary>5. Vocês entregam em todo o Brasil?</summary>
+<p>Sim! O livro <em>CONTRASTES</em> pode ser enviado para todo o território nacional, nas localidades atendidas pelos Correios.</p>
+<p>Durante a compra, basta informar seu <strong>CEP</strong> para consultar o valor do frete e o prazo estimado de entrega, de acordo com sua região.</p>
+<p>Os exemplares são embalados para oferecer proteção durante o transporte, e cada envio conta com um código de rastreamento.</p>
+<p>Independentemente de onde você esteja no Brasil, queremos que sua experiência de compra seja simples, segura e acompanhada até a entrega do livro.</p></details>
 </section>
 </main>
 
 <footer><div class="w">
-<p><b id="vend"></b> · Contato: <span id="ctt"></span> · <a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">@literaturaeartedigital</a> · <a href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener">@professoralanribeiro</a></p>
+<p><b id="vend"></b> · Contato: <span id="ctt"></span> · <a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">@literaturaeartedigital</a></p>
 <p><a href="../../">← Voltar ao site Literatura e Arte Digital</a></p>
 <p><a href="#" onclick="pol('privacidade');return false">Privacidade</a> · <a href="#" onclick="pol('termos');return false">Termos</a> · <a href="#" onclick="pol('devolucao');return false">Devolução</a></p>
-<p>© 2026 CONTRASTES. Todos os direitos reservados.</p></div></footer>
+<p>© 2026 CONTRASTES. Todos os direitos reservados.</p>
+<p>Criação e design do site: <b>João Silva Ribeiro</b> · <a href="https://github.com/joaosr8" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/joaosr8/" target="_blank" rel="noopener">LinkedIn</a></p></div></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -169,8 +193,8 @@ var CFG={
  pixNome:"ALAN RIBEIRO",
  pixCidade:"MACEIO",
  sinopse:"Algumas histórias não terminam quando o passado fica para trás.\nDaniel Albuquerque construiu uma vida cercada de projetos, decisões e certezas. Arquiteto respeitado, acostumou-se a organizar o mundo por meio de linhas precisas e estruturas bem definidas. Mas uma carta inesperada, acompanhada de uma fotografia antiga, coloca em dúvida acontecimentos que ele acreditava conhecer.\nAo revisitar uma noite de 2006, Daniel encontra lembranças incompletas, amizades marcadas pelo silêncio e documentos que podem revelar muito mais do que imaginava.\nEntre o passado que insiste em retornar e o presente que exige suas próprias escolhas, ele precisará enfrentar uma pergunta: até que ponto conhecemos a verdade sobre a vida que construímos?\nCONTRASTES é um romance contemporâneo sobre memória, relações humanas, escolhas e recomeços. Uma história em que descobrir a verdade pode ser apenas o primeiro passo para compreender a si mesmo.",
- bio:"Contador, administrador, mestre em Administração, especialista em Contabilidade Pública e professor universitário.\nÉ um entusiasta da educação, da gestão pública e da inovação social, áreas em que atua há mais de duas décadas.\nSua aproximação com a criação artística deu origem a coleções de arte contemporânea digital, nas quais explora formas, cores, movimentos e contrastes como expressões de experiências e reflexões humanas.\nCom CONTRASTES, seu primeiro romance, amplia essa experiência criativa para a literatura, transformando sete obras visuais em uma narrativa sobre memória, escolhas, relações humanas e recomeços.",
- detalhes:[["Subtítulo","Um romance sobre memória, escolhas e recomeços"],["Gênero","Romance contemporâneo · Literatura brasileira"],["Idioma","Português (Brasil)"],["ISBN","978-65-02-49991-7"],["Formato","Brochura, 14 × 21 cm"],["Páginas","Aprox. 174 (a confirmar na versão final)"],["Encadernação","Brochura com cola PUR"],["Capa","Papel Triplex 250 g, com orelhas de 7 cm"],["Miolo","Preto e branco, com 7 páginas coloridas das obras"],["Edição","1ª edição · 2026"],["Envio","Correios, todo o Brasil"]],
+ bio:"Alan Ribeiro é contador, administrador, mestre em Administração, especialista em Contabilidade Pública e professor universitário. Com mais de duas décadas de atuação profissional, construiu sua trajetória nas áreas de educação, gestão pública e inovação social, dedicando-se ao desenvolvimento de projetos e iniciativas voltados à transformação da sociedade.\nAo longo desse percurso, encontrou na arte contemporânea digital uma nova forma de expressão. Suas criações exploram cores, formas, movimentos e contrastes, traduzindo em imagens reflexões sobre a existência humana, suas contradições, escolhas e transformações.\nFoi dessa experiência artística que nasceu seu primeiro romance, CONTRASTES. A obra representa um novo capítulo de sua trajetória criativa, ao transformar sete composições visuais autorais em uma narrativa que conecta arte e literatura.\nEm suas páginas, memória, mistério, relações humanas e recomeços se entrelaçam, convidando o leitor a refletir sobre o passado, as decisões que moldam o presente e os caminhos que ainda podemos escolher.\nCom CONTRASTES, Alan Ribeiro apresenta sua estreia na literatura, levando para as palavras a mesma sensibilidade artística que inspira suas obras visuais.",
+ detalhes:[["Subtítulo","Um romance sobre memória, escolhas e recomeços."],["Gênero","Romance contemporâneo - Literatura brasileira."],["Idioma","Português (Brasil)"],["ISBN","978-65-02-49991-7"],["Formato","Brochura, 14cm x 21cm"],["Páginas","Aprox. 174 (a confirmar na versão final)"],["Encadernação","Brochura."],["Capa","Papel Triplex 250gr."],["Miolo","Em preto e branco, com 7 páginas coloridas referentes às obras."],["Edição","1ª edição · 2026"],["Envio","Correios para todo Brasil."]],
  obras:[["01_Equilibrio_Urbano.jpg","Equilíbrio Urbano"],["02_Fluxos.jpg","Fluxos"],["03_Equilibrio_em_Movimento.jpg","Equilíbrio em Movimento"],["04_Ponto_de_Equilibrio.jpg","Ponto de Equilíbrio"],["05_Renascer.jpg","Renascer"],["06_Horizontes.jpg","Horizontes"],["07_Essencia.jpg","Essência"]]
 };
 var $=function(i){return document.getElementById(i)};
@@ -278,7 +302,7 @@ function copiar(){var t=$("copia");t.select();try{navigator.clipboard.writeText(
 var POL={
  privacidade:"Coletamos nome, contato e endereço apenas para processar e entregar seu pedido (LGPD, Lei 13.709/2018). Não vendemos seus dados. Para solicitar acesso ou exclusão, fale conosco pelos canais de atendimento do site.",
  termos:"O preço total, o frete e o prazo são exibidos antes da confirmação. O pedido é confirmado após a verificação do pagamento Pix pelo vendedor. Vendedor: "+CFG.vendedor+".",
- devolucao:"Você pode desistir da compra em até 7 dias após o recebimento (CDC, art. 49). Entre em contato pelos canais de atendimento do site para combinarmos a devolução e o reembolso."
+ devolucao:"Você pode desistir da compra em até 7 dias corridos após o recebimento, sem precisar justificar (CDC, art. 49), e sem custos de devolução. Entre em contato pelos canais de atendimento do site dentro desse prazo para receber as orientações e o reembolso."
 };
 function pol(k){var m=document.createElement("div");m.className="modal";m.onclick=function(){m.remove()};m.innerHTML='<div><h3>'+k.charAt(0).toUpperCase()+k.slice(1)+'</h3><p>'+POL[k]+'</p><button class="btn">Fechar</button></div>';document.body.appendChild(m)}
 function openImg(src,t){var m=document.createElement("div");m.className="modal";m.onclick=function(){m.remove()};m.innerHTML='<div class="mi"><img src="'+src+'" alt="'+t+'"><p>'+t+'</p></div>';document.body.appendChild(m)}

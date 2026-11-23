@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>As sete obras — Literatura e Arte Digital</title>
+<meta name="description" content="Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance CONTRASTES.">
+<meta property="og:title" content="As sete obras — Literatura e Arte Digital">
+<meta property="og:description" content="Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance CONTRASTES.">
+<meta property="og:image" content="https://literaturaeartedigital.com.br/images/01_Equilibrio_Urbano.jpg">
+<meta property="og:url" content="https://literaturaeartedigital.com.br/artes/sete-obras/">
+<link rel="canonical" href="https://literaturaeartedigital.com.br/artes/sete-obras/">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top"><div class="w bar"><a class="brand" href="../../">LITERATURA <i>&amp;</i> ARTE DIGITAL</a><nav><a href="../../livros/">Livros</a><a href="../../artes/">Artes</a><a href="../../#sobre">O autor</a></nav></div></header>
+<main>
+<div class="w pg"><p class="tag">Coleção · Arte contemporânea digital</p><h1>As sete obras</h1>
+<p>Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p>
+<p>Conheça mais em: <a class="igl" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</a></p></div>
+<section class="w" style="border-top:0;padding-top:20px"><div class="gal">
+<figure><a href="../../images/01_Equilibrio_Urbano.jpg" data-i="0"><img src="../../images/01_Equilibrio_Urbano.jpg" alt="Obra 1: Equilíbrio Urbano" loading="lazy"></a><figcaption>1. Equilíbrio Urbano</figcaption></figure>
+<figure><a href="../../images/02_Fluxos.jpg" data-i="1"><img src="../../images/02_Fluxos.jpg" alt="Obra 2: Fluxos" loading="lazy"></a><figcaption>2. Fluxos</figcaption></figure>
+<figure><a href="../../images/03_Equilibrio_em_Movimento.jpg" data-i="2"><img src="../../images/03_Equilibrio_em_Movimento.jpg" alt="Obra 3: Equilíbrio em Movimento" loading="lazy"></a><figcaption>3. Equilíbrio em Movimento</figcaption></figure>
+<figure><a href="../../images/04_Ponto_de_Equilibrio.jpg" data-i="3"><img src="../../images/04_Ponto_de_Equilibrio.jpg" alt="Obra 4: Ponto de Equilíbrio" loading="lazy"></a><figcaption>4. Ponto de Equilíbrio</figcaption></figure>
+<figure><a href="../../images/05_Renascer.jpg" data-i="4"><img src="../../images/05_Renascer.jpg" alt="Obra 5: Renascer" loading="lazy"></a><figcaption>5. Renascer</figcaption></figure>
+<figure><a href="../../images/06_Horizontes.jpg" data-i="5"><img src="../../images/06_Horizontes.jpg" alt="Obra 6: Horizontes" loading="lazy"></a><figcaption>6. Horizontes</figcaption></figure>
+<figure><a href="../../images/07_Essencia.jpg" data-i="6"><img src="../../images/07_Essencia.jpg" alt="Obra 7: Essência" loading="lazy"></a><figcaption>7. Essência</figcaption></figure>
+</div>
+<p style="margin-top:32px"><a class="btn" href="../../livros/contrastes/">Conhecer o livro CONTRASTES</a> <a class="btn o" href="../">Todas as artes</a></p></section>
+</main>
+<footer><div class="w">
+<p><b>Literatura e Arte Digital</b> · Alan Ribeiro</p>
+<p><a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Instagram · @literaturaeartedigital</a></p>
+<p>Atendimento por WhatsApp: em breve.</p>
+<p>© 2026 Literatura e Arte Digital. Textos, capas e obras pertencem a Alan Ribeiro.</p>
+<p>Criação e design do site: <b>João Silva Ribeiro</b> · <a href="https://github.com/joaosr8" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/joaosr8/" target="_blank" rel="noopener">LinkedIn</a></p>
+</div></footer>
+<script>var G=[["../../images/01_Equilibrio_Urbano.jpg", "Equilíbrio Urbano"], ["../../images/02_Fluxos.jpg", "Fluxos"], ["../../images/03_Equilibrio_em_Movimento.jpg", "Equilíbrio em Movimento"], ["../../images/04_Ponto_de_Equilibrio.jpg", "Ponto de Equilíbrio"], ["../../images/05_Renascer.jpg", "Renascer"], ["../../images/06_Horizontes.jpg", "Horizontes"], ["../../images/07_Essencia.jpg", "Essência"]];var cur=0,lb=null;
+function show(i){cur=(i+G.length)%G.length;if(!lb){lb=document.createElement("div");lb.className="lb";lb.onclick=function(e){if(e.target===lb)fecha()};document.body.appendChild(lb)}lb.innerHTML='<img src="'+G[cur][0]+'" alt="'+G[cur][1]+'"><p>'+(cur+1)+". "+G[cur][1]+'</p><div><button onclick="show(cur-1)">← Anterior</button><button onclick="fecha()">Fechar</button><button onclick="show(cur+1)">Próxima →</button></div>'}
+function fecha(){if(lb){lb.remove();lb=null}}
+document.querySelectorAll(".gal a").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();show(+a.dataset.i)})});
+document.addEventListener("keydown",function(e){if(!lb)return;if(e.key==="Escape")fecha();if(e.key==="ArrowRight")show(cur+1);if(e.key==="ArrowLeft")show(cur-1)});</script>
+</body>
+</html>

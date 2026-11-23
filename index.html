@@ -19,9 +19,8 @@
 .hero2 .lead{font-size:20px;max-width:560px;color:#c5d3df}
 .hero2 .capa{display:block;width:100%;max-width:310px;margin:auto;border-radius:3px;box-shadow:0 26px 60px rgba(0,0,0,.65);transform:rotate(2deg)}
 .dest{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center}
-.dest .duo{display:flex;gap:16px;justify-content:center}
-.dest .duo img{width:46%;max-width:210px;border-radius:3px;box-shadow:0 14px 34px rgba(0,0,0,.4)}
-.dest .duo img+img{margin-top:34px}
+.dest .duo{display:flex;gap:16px;justify-content:center;align-items:flex-start}
+.dest .duo img{width:46%;max-width:210px;aspect-ratio:2/3;object-fit:cover;border-radius:3px;box-shadow:0 14px 34px rgba(0,0,0,.4)}
 .tag{font:13px system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ac)}
 .obras7{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:22px}
 .obras7 a{display:block;text-decoration:none;color:inherit}
@@ -52,7 +51,7 @@
 <div class="dest">
 <div class="duo">
 <img src="images/capa.jpeg" alt="Capa do livro CONTRASTES" loading="lazy">
-<img src="images/quartacapa.jpeg" alt="Quarta capa do livro CONTRASTES" loading="lazy">
+<img src="images/quartacapa.jpeg" alt="Contracapa do livro CONTRASTES" loading="lazy">
 </div>
 <div>
 <p class="tag">Em destaque · Romance</p>
@@ -60,14 +59,15 @@
 <p style="font-size:20px;font-style:italic;margin-top:0">Um romance sobre memória, escolhas e recomeços.</p>
 <p>Uma fotografia antiga. Uma carta inesperada. Um passado que insiste em retornar.</p>
 <p>Conheça Daniel Albuquerque, um arquiteto que vê suas certezas abaladas quando acontecimentos esquecidos começam a revelar novas verdades.</p>
-<p><a class="btn" href="livros/contrastes/">Conhecer e comprar</a> <a class="btn o" href="livros/">Todos os livros</a></p>
+<p><a class="btn" href="livros/contrastes/">Conhecer e comprar</a></p>
 </div>
 </div>
 </section>
 
 <section class="w" id="obras">
 <h2>Sete obras. Sete capítulos. Uma história.</h2>
-<p style="max-width:680px;color:var(--mut)">Sete composições de arte contemporânea digital criadas por Alan Ribeiro inspiraram os sete capítulos de CONTRASTES.</p>
+<p style="max-width:680px;color:var(--mut)">Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p>
+<p>Conheça mais em: <a class="igl" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</a></p>
 <div class="obras7">
 <a href="livros/contrastes/#obras"><img src="images/01_Equilibrio_Urbano.jpg" alt="Obra 1: Equilíbrio Urbano" loading="lazy"><span>1. Equilíbrio Urbano</span></a>
 <a href="livros/contrastes/#obras"><img src="images/02_Fluxos.jpg" alt="Obra 2: Fluxos" loading="lazy"><span>2. Fluxos</span></a>
@@ -77,6 +77,7 @@
 <a href="livros/contrastes/#obras"><img src="images/06_Horizontes.jpg" alt="Obra 6: Horizontes" loading="lazy"><span>6. Horizontes</span></a>
 <a href="livros/contrastes/#obras"><img src="images/07_Essencia.jpg" alt="Obra 7: Essência" loading="lazy"><span>7. Essência</span></a>
 </div>
+<p style="margin-top:28px"><a href="artes/sete-obras/">Ver a coleção completa →</a></p>
 </section>
 
 <section class="w" id="sobre"><h2>Sobre o autor</h2>
@@ -84,13 +85,14 @@
 <img src="images/sobreoautor.jpeg" alt="Alan Ribeiro, autor de CONTRASTES" loading="lazy">
 <div>
 <h3 style="font-style:italic">Alan Ribeiro</h3>
-<p>Contador, administrador, mestre em Administração, especialista em Contabilidade Pública e professor universitário.</p>
-<p>É um entusiasta da educação, da gestão pública e da inovação social, áreas em que atua há mais de duas décadas.</p>
-<p>Sua aproximação com a criação artística deu origem a coleções de arte contemporânea digital, nas quais explora formas, cores, movimentos e contrastes como expressões de experiências e reflexões humanas.</p>
-<p>Com CONTRASTES, seu primeiro romance, amplia essa experiência criativa para a literatura, transformando sete obras visuais em uma narrativa sobre memória, escolhas, relações humanas e recomeços.</p>
+<p class="tagl">Da gestão e da educação à arte contemporânea e à literatura.</p>
+<p>Alan Ribeiro é contador, administrador, mestre em Administração, especialista em Contabilidade Pública e professor universitário. Com mais de duas décadas de atuação profissional, construiu sua trajetória nas áreas de educação, gestão pública e inovação social, dedicando-se ao desenvolvimento de projetos e iniciativas voltados à transformação da sociedade.</p>
+<p>Ao longo desse percurso, encontrou na arte contemporânea digital uma nova forma de expressão. Suas criações exploram cores, formas, movimentos e contrastes, traduzindo em imagens reflexões sobre a existência humana, suas contradições, escolhas e transformações.</p>
+<p>Foi dessa experiência artística que nasceu seu primeiro romance, <em>CONTRASTES</em>. A obra representa um novo capítulo de sua trajetória criativa, ao transformar sete composições visuais autorais em uma narrativa que conecta arte e literatura.</p>
+<p>Em suas páginas, memória, mistério, relações humanas e recomeços se entrelaçam, convidando o leitor a refletir sobre o passado, as decisões que moldam o presente e os caminhos que ainda podemos escolher.</p>
+<p>Com <em>CONTRASTES</em>, Alan Ribeiro apresenta sua estreia na literatura, levando para as palavras a mesma sensibilidade artística que inspira suas obras visuais.</p>
 <div class="cards">
 <a class="card" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><b>@literaturaeartedigital</b><span>Instagram das artes e da literatura</span></a>
-<a class="card" href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener"><b>@professoralanribeiro</b><span>Instagram principal do autor</span></a>
 </div></div></div></section>
 
 <section class="w"><h2>Artes</h2>
@@ -100,9 +102,10 @@
 
 <footer><div class="w">
 <p><b>Literatura e Arte Digital</b> · Alan Ribeiro</p>
-<p><a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Instagram das artes · @literaturaeartedigital</a> · <a href="https://www.instagram.com/professoralanribeiro/" target="_blank" rel="noopener">Instagram principal · @professoralanribeiro</a></p>
+<p><a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Instagram · @literaturaeartedigital</a></p>
 <p>Atendimento por WhatsApp: em breve.</p>
 <p>© 2026 Literatura e Arte Digital. Textos, capas e obras pertencem a Alan Ribeiro.</p>
+<p>Criação e design do site: <b>João Silva Ribeiro</b> · <a href="https://github.com/joaosr8" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/joaosr8/" target="_blank" rel="noopener">LinkedIn</a></p>
 </div></footer>
 <script src="assets/catalogo.js"></script>
 <script src="assets/site.js"></script>

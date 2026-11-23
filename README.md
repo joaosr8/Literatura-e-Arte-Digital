@@ -14,6 +14,7 @@ Site em HTML, CSS e JavaScript puro (sem build) para **literaturaeartedigital.co
 | `literaturaeartedigital.com.br/livros/` | Lista de livros |
 | `literaturaeartedigital.com.br/livros/contrastes/` | Landing page do CONTRASTES |
 | `literaturaeartedigital.com.br/artes/` | Lista de artes |
+| `literaturaeartedigital.com.br/artes/sete-obras/` | Coleção "As sete obras" |
 
 ## Estrutura
 
@@ -33,7 +34,8 @@ Site em HTML, CSS e JavaScript puro (sem build) para **literaturaeartedigital.co
 │       └── images/                 # capa.jpeg, quartacapa.jpeg, sobreoautor.jpeg,
 │                                   # sobreolivro.jpeg e as 7 obras (01_… a 07_…)
 └── artes/
-    └── index.html                  # lista de artes
+    ├── index.html                  # lista de artes
+    └── sete-obras/index.html       # coleção "As sete obras"
 ```
 
 > **Importante:** coloque a sua pasta `images` (com `capa.jpeg`, `quartacapa.jpeg`, `sobreoautor.jpeg`, `sobreolivro.jpeg` e as sete obras) dentro de `livros/contrastes/`. A página inicial também usa `livros/contrastes/images/capa.jpeg` e `sobreoautor.jpeg`.

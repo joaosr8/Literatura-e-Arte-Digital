@@ -6,7 +6,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times
 h1,h2,h3{line-height:1.15;margin:0 0 .5em}
 a{color:var(--ac)}
 img{max-width:100%;height:auto}
-.w{max-width:1000px;margin:0 auto;padding:0 20px}
+.w{max-width:1000px;margin:0 auto;padding-left:20px;padding-right:20px}
 .top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .bar{display:flex;justify-content:space-between;align-items:center;min-height:62px;gap:12px;flex-wrap:wrap}
 .brand{font-weight:700;letter-spacing:.14em;text-decoration:none;color:var(--fg);font-size:15px}
@@ -44,3 +44,17 @@ section{padding:54px 0;border-top:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font:14px system-ui,sans-serif}
 footer p{margin:6px 0}
 @media(max-width:700px){.autor{grid-template-columns:1fr}.autor img{max-width:180px}.hero{padding:60px 0 48px}.item{grid-template-columns:100px 1fr}nav a{margin-left:12px}}
+.igl{display:inline-flex;align-items:center;gap:6px;font-weight:700;text-decoration:none}
+.tag{font:13px system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ac);margin:0 0 6px}
+.tagl{font-style:italic;color:var(--mut);font-size:19px;margin-top:0}
+main{padding-bottom:10px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.gal a{display:block}
+.gal img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .2s}
+.gal a:hover img{transform:scale(1.03)}
+.gal figcaption{padding:10px 12px;font:14px system-ui,sans-serif;color:var(--mut)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb img{max-width:92vw;max-height:76vh;border-radius:3px}
+.lb p{color:#e8eef4;font:15px system-ui,sans-serif;margin:12px 0}
+.lb button{background:#10202c;color:#e8eef4;border:1px solid #36506a;padding:10px 16px;border-radius:4px;font:15px system-ui,sans-serif;cursor:pointer;margin:0 5px}

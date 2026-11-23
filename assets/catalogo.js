@@ -7,6 +7,7 @@ var LIVROS=[
   url:"livros/contrastes/",capa:"livros/contrastes/images/capa.jpeg",alt:"Capa do livro CONTRASTES",cta:"Conhecer e comprar"}
 ];
 var ARTES=[
- // Exemplo:
- // {titulo:"Equilíbrio Urbano",subtitulo:"Arte contemporânea digital",resumo:"Texto curto.",url:"artes/equilibrio-urbano/",capa:"artes/equilibrio-urbano/images/capa.jpg",alt:"Descrição da imagem",cta:"Ver obra"}
+ {titulo:"As sete obras",subtitulo:"Coleção de arte contemporânea digital",
+  resumo:"Sete composições criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance CONTRASTES.",
+  url:"artes/sete-obras/",capa:"images/01_Equilibrio_Urbano.jpg",alt:"Obra Equilíbrio Urbano, da coleção As sete obras",cta:"Ver a coleção"}
 ];
