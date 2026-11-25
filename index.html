@@ -23,13 +23,12 @@
 .dest .duo img{width:46%;max-width:210px;aspect-ratio:2/3;object-fit:cover;border-radius:3px;box-shadow:0 14px 34px rgba(0,0,0,.4)}
 .tag{font:13px system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ac)}
 .obras7{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:22px}
-.obras7 a{display:block;text-decoration:none;color:inherit}
+.obras7 .ob{display:block}
 .obras7 img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;box-shadow:0 8px 20px rgba(0,0,0,.3);transition:transform .15s}
-.obras7 a:hover img{transform:translateY(-4px)}
 .obras7 span{display:block;margin-top:8px;font:12px/1.3 system-ui,sans-serif;color:var(--mut)}
 .band{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px}
 .band p{margin:0;max-width:560px}
-@media(max-width:900px){.obras7{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.obras7 a{flex:0 0 140px;scroll-snap-align:start}}
+@media(max-width:900px){.obras7{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.obras7 .ob{flex:0 0 140px;scroll-snap-align:start}}
 @media(max-width:700px){.hero2{padding:52px 0}.hero2 .in,.dest{grid-template-columns:1fr}.hero2 .capa{max-width:230px;order:-1}.hero2 .acts{margin-top:22px}}
 </style>
 </head>
@@ -41,7 +40,7 @@
 <p class="eyebrow">Alan Ribeiro</p>
 <h1>Literatura e Arte Digital</h1>
 <p class="lead">Romances e composições de arte contemporânea digital, onde cada obra visual vira uma história.</p>
-<div class="acts"><a class="btn gold" href="livros/contrastes/">Conhecer CONTRASTES</a><a class="btn ghost" href="artes/">Artes</a></div>
+<div class="acts"><a class="btn gold" href="livros/contrastes/">Conhecer CONTRASTES</a><a class="btn ghost" href="livros/contrastes/#obras">Ver as artes</a></div>
 </div>
 <img class="capa" src="images/capa.jpeg" alt="Capa do livro CONTRASTES, de Alan Ribeiro">
 </div></div>
@@ -69,15 +68,15 @@
 <p style="max-width:680px;color:var(--mut)">Sete composições de arte contemporânea digital criadas por Alan Ribeiro, que inspiraram os sete capítulos do romance. No livro, elas aparecem em sete páginas coloridas.</p>
 <p>Conheça mais em: <a class="igl" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</a></p>
 <div class="obras7">
-<a href="livros/contrastes/#obras"><img src="images/01_Equilibrio_Urbano.jpg" alt="Obra 1: Equilíbrio Urbano" loading="lazy"><span>1. Equilíbrio Urbano</span></a>
-<a href="livros/contrastes/#obras"><img src="images/02_Fluxos.jpg" alt="Obra 2: Fluxos" loading="lazy"><span>2. Fluxos</span></a>
-<a href="livros/contrastes/#obras"><img src="images/03_Equilibrio_em_Movimento.jpg" alt="Obra 3: Equilíbrio em Movimento" loading="lazy"><span>3. Equilíbrio em Movimento</span></a>
-<a href="livros/contrastes/#obras"><img src="images/04_Ponto_de_Equilibrio.jpg" alt="Obra 4: Ponto de Equilíbrio" loading="lazy"><span>4. Ponto de Equilíbrio</span></a>
-<a href="livros/contrastes/#obras"><img src="images/05_Renascer.jpg" alt="Obra 5: Renascer" loading="lazy"><span>5. Renascer</span></a>
-<a href="livros/contrastes/#obras"><img src="images/06_Horizontes.jpg" alt="Obra 6: Horizontes" loading="lazy"><span>6. Horizontes</span></a>
-<a href="livros/contrastes/#obras"><img src="images/07_Essencia.jpg" alt="Obra 7: Essência" loading="lazy"><span>7. Essência</span></a>
+<div class="ob"><img src="images/01_Equilibrio_Urbano.jpg" alt="Obra 1: Equilíbrio Urbano" loading="lazy"><span>1. Equilíbrio Urbano</span></div>
+<div class="ob"><img src="images/02_Fluxos.jpg" alt="Obra 2: Fluxos" loading="lazy"><span>2. Fluxos</span></div>
+<div class="ob"><img src="images/03_Equilibrio_em_Movimento.jpg" alt="Obra 3: Equilíbrio em Movimento" loading="lazy"><span>3. Equilíbrio em Movimento</span></div>
+<div class="ob"><img src="images/04_Ponto_de_Equilibrio.jpg" alt="Obra 4: Ponto de Equilíbrio" loading="lazy"><span>4. Ponto de Equilíbrio</span></div>
+<div class="ob"><img src="images/05_Renascer.jpg" alt="Obra 5: Renascer" loading="lazy"><span>5. Renascer</span></div>
+<div class="ob"><img src="images/06_Horizontes.jpg" alt="Obra 6: Horizontes" loading="lazy"><span>6. Horizontes</span></div>
+<div class="ob"><img src="images/07_Essencia.jpg" alt="Obra 7: Essência" loading="lazy"><span>7. Essência</span></div>
 </div>
-<p style="margin-top:28px"><a href="artes/sete-obras/">Ver a coleção completa →</a></p>
+<p style="margin-top:32px"><a class="btn o" href="livros/contrastes/#obras">Ver a coleção completa →</a></p>
 </section>
 
 <section class="w" id="sobre"><h2>Sobre o autor</h2>
@@ -92,23 +91,18 @@
 <p>Em suas páginas, memória, mistério, relações humanas e recomeços se entrelaçam, convidando o leitor a refletir sobre o passado, as decisões que moldam o presente e os caminhos que ainda podemos escolher.</p>
 <p>Com <em>CONTRASTES</em>, Alan Ribeiro apresenta sua estreia na literatura, levando para as palavras a mesma sensibilidade artística que inspira suas obras visuais.</p>
 <div class="cards">
-<a class="card" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><b>@literaturaeartedigital</b><span>Instagram das artes e da literatura</span></a>
+<a class="card" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><b><svg style="vertical-align:-3px;margin-right:6px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</b><span>Literatura e Artes Digitais</span></a>
 </div></div></div></section>
 
-<section class="w"><h2>Artes</h2>
-<div class="lista" id="artesHome"></div>
-<div class="band" style="margin-top:20px"><p>Novas coleções de arte contemporânea digital ganharão páginas próprias aqui.</p><a class="btn o" href="artes/">Ir para a seção de artes →</a></div></section>
+<section class="w" style="text-align:center"><a class="btn" style="font-size:18px;padding:16px 44px" href="livros/contrastes/">Conheça e compre</a></section>
 </main>
 
 <footer><div class="w">
 <p><b>Literatura e Arte Digital</b> · Alan Ribeiro</p>
-<p><a href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener">Instagram · @literaturaeartedigital</a></p>
+<p><a class="igl" href="https://www.instagram.com/literaturaeartedigital/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @literaturaeartedigital</a></p>
 <p>Atendimento por WhatsApp: em breve.</p>
 <p>© 2026 Literatura e Arte Digital. Textos, capas e obras pertencem a Alan Ribeiro.</p>
 <p>Criação e design do site: <b>João Silva Ribeiro</b> · <a href="https://github.com/joaosr8" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/joaosr8/" target="_blank" rel="noopener">LinkedIn</a></p>
 </div></footer>
-<script src="assets/catalogo.js"></script>
-<script src="assets/site.js"></script>
-<script>if(ARTES.length)lista("artesHome",ARTES.slice(0,3),"","");</script>
 </body>
 </html>
